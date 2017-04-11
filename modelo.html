@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"> 
+<title></title>
+    <style  type="text/css">
+        @import url(http://aaguiarcam.github.io/stylesheet.css);
+        * {margin: 0; padding: 0; box-sizing: border-box; font-weight: normal;}
+        body{counter-reset: t1}
+        #topo{
+            position: relative;
+            margin-top: 1em; 
+            margin-bottom: 3em; 
+            width: 100%; 
+        }
+        #topo .bar{
+            background-color: #000000; 
+            height: .2em; 
+            top: 2.12em;
+            position: absolute;
+        }
+        #topo #direita{
+            left: 50%;
+            margin-left: 2.10em;/*em relacao ao tamanho do svg (#topo img)*/
+            right: 0;
+        }
+        #topo #esquerda{
+            right: 50%;
+            margin-right: 2.10em;
+            left: 0;            
+        }
+        #topo img {
+            position: relative;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4.24em;
+        }
+        #AA {
+            position: relative;
+            width: inherit;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0em;
+            text-align: center;
+            font-family: 'casperregular', 'Candara', 'Arial', sans-serif;
+        }
+        #AA p:first-line{
+            font-size: 1.5em;/*o tamanho de p + 50%*/
+        }
+        #AA p {
+            font-size: 1em;
+        }
+        #corpo{
+            position: relative;
+            font-family: "Calibri","Candara","Segoe UI","Arial",sans-serif;
+            max-width: 777px; 
+            font-size: 1em;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: justify;
+            margin: 0 1em 0em 1em;
+            line-height: 150%;
+        }
+        #corpo p {
+            /* font: inherit */
+            margin: 0 0 1em 0;
+            text-indent: 3em;
+        }
+        #enderecamento{
+            /* font: inherit */
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 0 10em 0;
+        }
+        #qualificacao{
+            /* font: inherit */
+            margin: 0 0 3em 0;
+        }
+        #qualificacao span{
+            /* font: inherit */
+            
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        #qualificacao h1{
+            /* font: inherit */
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 170%;
+            margin: 0 0 0 0;
+        }
+        #qualificacao h1:before{
+            content: none;
+        }
+        h1{
+            font: inherit;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            counter-reset: t2;
+            margin: 0 0 1em 0;
+        }
+        h1:before{
+            content: counter(t1) ". ";
+            counter-increment: t1;
+            
+        }
+        h2{
+            /* font: inherit */
+            font-size: 1.4em;
+            margin: 0 0 1em 0;
+            text-transform: capitalize;
+            counter-increment: t2;
+            counter-reset: t3;
+        }
+        h2:before{
+            content: counter(t1)"."counter(t2)". ";
+        }
+        blockquote{
+            margin: 1.5em 2em 2em 20%;
+            font-size: .9em;
+            font-family: TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;
+        }
+        #rodape{
+            margin: 10em 0 5em 0;
+            text-align: center;
+        }
+        #rodape hr{
+            height: .15em;
+            background: #000;
+            border: none;
+            margin: 0 0 .5em 0;
+        }
+        #assinatura{
+            text-align: center;
+            margin: 5em 0 0 0;
+        }
+        #assinatura p {
+            text-indent: 0;
+        }
+        #oab{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="topo"> <div class="bar" id="esquerda"></div><div class="bar" id="direita"></div>
+        <img src="data:image/svg+xml,%3Csvg%20id%3D%22Camada_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2056.7%2056.7%22%3E%0D%0A%20%20%3Cstyle%3E%0D%0A%20%20%20%20.st0%7Bfill%3A%23009F3C%3B%7D%0D%0A%20%20%3C%2Fstyle%3E%0D%0A%20%20%3Cpath%20class%3D%22st0%22%20d%3D%22M54.5%2017.3c-1.4-3.4-3.5-6.4-6.1-9-2.6-2.6-5.6-4.7-9-6.1C35.9.8%2032.2%200%2028.4%200s-7.5.8-11%202.2C14%203.6%2011%205.7%208.4%208.3c-2.6%202.6-4.6%205.6-6.1%209C.8%2020.8%200%2024.5%200%2028.3c0%201.6.1%203.3.4%204.8%200%20.1%200%20.2.1.3.1.6.2%201.1.3%201.6v.1c.3%201.2.6%202.3%201.1%203.4.1.3.2.5.3.8%201%202.4%202.3%204.6%203.9%206.6l2.1%202.4c2.6%202.6%205.6%204.6%209%206.1%203.5%201.5%207.2%202.2%2011%202.2%202.2%200%204.4-.3%206.6-.8%201.5-.4%203-.9%204.5-1.5.5-.2%201.1-.5%201.6-.7%202.7-1.4%205.2-3.2%207.4-5.3%201.9-1.9%203.5-4%204.8-6.3.1-.1.2-.3.3-.5.4-.7.7-1.5%201.1-2.2.6-1.4%201-2.8%201.4-4.2V35c.1-.5.3-1.1.3-1.6v-.3c.3-1.6.4-3.2.4-4.8.1-3.8-.6-7.5-2.1-11zM18.3%2013l6.3%2016.2H12.2L18.3%2013zm-15%2021.8c-.5-2.1-.8-4.2-.8-6.4%200-8.8%204.4-16.6%2011.1-21.2L3.3%2034.8zm25.1%2019.4c-8.8%200-16.5-4.3-21.2-11l3-8.2h16.6L34%2053.6c-1.8.4-3.7.6-5.6.6zM34%2034.7c0-1.1.3-2%20.9-2.5s1.4-.9%202.5-.9h9.1V34c-.6.3-1.2.7-1.9%201.1s-1.4.8-2.2%201.2c-.8.4-1.5.7-2.3%201-.8.3-1.4.4-2.1.4-1.1%200-2.1-.2-2.9-.6-.7-.4-1.1-1.2-1.1-2.4zm6.1%2016.7l-3.4-8.7h.8c1.8%200%203.4-.4%204.9-1.1%201.5-.7%203-1.6%204.4-2.6.1.5.2%201%20.3%201.6.1.6.4%201.1.6%201.5h2.6c-2.5%203.9-6%207.2-10.2%209.3zm12.2-13.2c-.1-.6-.1-1.3-.1-2V24.8c0-1.5-.3-2.9-.9-4.1-.6-1.2-1.4-2.2-2.4-3-1-.8-2.2-1.4-3.5-1.8-1.3-.4-2.7-.6-4.2-.6-2%200-3.8.2-5.4.7-1.6.4-3.3%201.2-5%202.1l1.8%204.7c1.3-.7%203.2-1.7%204.4-2s2.6-.5%204.2-.5c1.8%200%203.1.5%204%201.3.9.8%201.4%202.2%201.4%204.1v.6h-9.1c-1.2%200-2.4.2-3.5.6-1%20.4-1.9.9-2.7%201.5l-9.7-25c2.2-.6%204.5-.9%206.9-.9%2014.3%200%2025.9%2011.6%2025.9%2025.8-.2%203.5-.9%206.8-2.1%209.9z%22%2F%3E%0D%0A%3C%2Fsvg%3E" alt="" />
+        <div id="AA"><p>Antenor Aguiar<br/>Advocacia Especializada</p></div>
+   </div>
+    <div id="corpo"> 
+        <div id="enderecamento">Excelentíssimo Senhor Doutor Juiz de Direito de uma das Varas do Sistema de Juizados Especiais do Consumidor de Salvador/BA</div>
+        <div id="qualificacao"><span>DANIEL DAVI CARVALHO ALMEIDA</span>, solteiro, estudante, portador do Registro Geral nº 5556299456/SSPSE e do Cadastro de Pessoas Físicas 381.418.544-70, residente na Rua Rua João Consulo Moreira, Ed. Nossa Senhora de Fátima, N°545, Ap. 201, Brotas, nesta capital, CEP 86084-215, vem, respeitosamente, perante Vossa Excelência, intentar a presente <h1>Queixa</h1> contra <span>ITAU UNIBANCO S/A.</span>, pessoa jurídica inscrita no CNPJ sob o nº 60.701.190/0001-04, estabelecida na Avenida Estados Unidos, 50, Comércio, Salvador – BA, CEP 40010-020 por conta dos fatos e motivos alegados a seguir:</div>
+        <h1>Dos Fatos</h1>
+        <h2>Das coisinhas</h2>
+        <h2>Das coisinhas</h2>
+        <h1>Dos Fatos</h1>
+        <h2>Das coisinhas</h2>
+        <h2>Das coisinhas</h2>
+        
+    <p>É importante questionar o quanto a expansão dos mercados mundiais não pode mais se dissociar das condições financeiras e administrativas exigidas. Por outro lado, a complexidade dos estudos efetuados desafia a capacidade de equalização das diretrizes de desenvolvimento para o futuro. Assim mesmo, a hegemonia do ambiente político exige a precisão e a definição das condições inegavelmente apropriadas. </p>
+    <p>Acima de tudo, é fundamental ressaltar que o desafiador cenário globalizado obstaculiza a apreciação da importância das posturas dos órgãos dirigentes com relação às suas atribuições. Do mesmo modo, o novo modelo estrutural aqui preconizado causa impacto indireto na reavaliação dos conhecimentos estratégicos para atingir a excelência. A nível organizacional, o consenso sobre a necessidade de qualificação maximiza as possibilidades por conta do sistema de formação de quadros que corresponde às necessidades.</p>
+    <p>Desta maneira, o desenvolvimento contínuo de distintas formas de atuação estende o alcance e a importância do levantamento das variáveis envolvidas. As experiências acumuladas demonstram que a estrutura atual da organização deve passar por modificações independentemente das direções preferenciais no sentido do progresso. No entanto, não podemos esquecer que a execução dos pontos do programa oferece uma interessante oportunidade para verificação dos índices pretendidos. Neste sentido, a determinação clara de objetivos cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte. </p>
+        <blockquote>Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o início da atividade geral de formação de atitudes facilita a criação dos paradigmas corporativos. Caros amigos, o acompanhamento das preferências de consumo representa uma abertura para a melhoria das regras de conduta normativas. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o aumento do diálogo entre os diferentes setores produtivos ainda não demonstrou convincentemente que vai participar na mudança dos procedimentos normalmente adotados. Não obstante, a crescente influência da mídia talvez venha a ressaltar a relatividade das diversas correntes de pensamento. Ainda assim, existem dúvidas a respeito de como a percepção das dificuldades auxilia a preparação e a composição do processo de comunicação como um todo. </blockquote>
+    Pensando mais a longo prazo, a consulta aos diversos militantes pode nos levar a considerar a reestruturação de todos os recursos funcionais envolvidos. Gostaria de enfatizar que o fenômeno da Internet promove a alavancagem das formas de ação. Podemos já vislumbrar o modo pelo qual a necessidade de renovação processual acarreta um processo de reformulação e modernização dos modos de operação convencionais. <br/>
+    Por conseguinte, a competitividade nas transações comerciais prepara-nos para enfrentar situações atípicas decorrentes de alternativas às soluções ortodoxas. O incentivo ao avanço tecnológico, assim como a mobilidade dos capitais internacionais assume importantes posições no estabelecimento do fluxo de informações. No mundo atual, a revolução dos costumes nos obriga à análise dos relacionamentos verticais entre as hierarquias. Todavia, a consolidação das estruturas possibilita uma melhor visão global dos métodos utilizados na avaliação de resultados. 
+        <div id=assinatura><p>Nestes Termos,<br/>Pede Deferimento.</p><p id="oab">Antenor Aguiar C. A. Matos<br/>OAB/BA 47.847</p></div>
+        <div id="rodape"><hr/>AntenorAguiarCAM@gmail.com<br/>(71) 993-038-727
+        </div>
+</div>
+
+</body>
+</html>
