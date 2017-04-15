@@ -35,7 +35,13 @@
   </url>
   
   <url>
-    <loc>https://aaguiarcam.github.io/categories/category/</loc>
+    <loc>https://aaguiarcam.github.io/tags/clientes/</loc>
+    <lastmod>2017-04-13T22:34:13-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaguiarcam.github.io/categories/crimes/</loc>
     <lastmod>2016-12-22T14:50:53-03:00</lastmod>
     <priority>0</priority>
   </url>
@@ -43,6 +49,18 @@
   <url>
     <loc>https://aaguiarcam.github.io/tags/eu/</loc>
     <lastmod>2017-04-11T20:40:13-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaguiarcam.github.io/categories/explica%C3%A7%C3%A3o/</loc>
+    <lastmod>2016-12-22T14:50:53-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaguiarcam.github.io/tags/mandala/</loc>
+    <lastmod>2016-12-22T14:50:53-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,6 +89,12 @@
   </url>
   
   <url>
+    <loc>https://aaguiarcam.github.io/tags/pir%C3%A2mide/</loc>
+    <lastmod>2016-12-22T14:50:53-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://aaguiarcam.github.io/post/</loc>
     <lastmod>2017-04-13T22:34:13-03:00</lastmod>
     <priority>0</priority>
@@ -83,20 +107,8 @@
   </url>
   
   <url>
-    <loc>https://aaguiarcam.github.io/tags/tag1/</loc>
-    <lastmod>2016-12-22T14:50:53-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aaguiarcam.github.io/tags/tag2/</loc>
-    <lastmod>2017-04-13T22:34:13-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://aaguiarcam.github.io/tags/</loc>
-    <lastmod>2017-04-11T20:40:13-03:00</lastmod>
+    <lastmod>2017-04-13T22:34:13-03:00</lastmod>
     <priority>0</priority>
   </url>
   
