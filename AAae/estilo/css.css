@@ -396,3 +396,18 @@ adress p{
 
 
 @media screen and ()
+
+.pedido {
+    
+}
+
+.pedido {
+    margin-left: 10%;
+}
+.pedido:before{
+    counter-increment: ponto;
+    content: counter(steps) ") ";
+}
+.pedido ol{
+    margin-left: 5%;
+}
